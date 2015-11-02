@@ -10,6 +10,6 @@ private
     :password => '378f73dbe67adeabe5f14894d631c510',
     :payload => {:Body => body,
                  :From => from,
-                 :To => to })                      
+                 :To => to }).execute                    
   end
 end
