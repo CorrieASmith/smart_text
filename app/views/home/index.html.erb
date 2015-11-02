@@ -1,13 +1,13 @@
-<h1>Messages</h1>
+<h3>Contacts</h3>
+<br>
 
 <ul>
-
   <% @contacts.each do |contact| %>
     <li><%= link_to contact.name, contact_path(contact) %></li>
   <% end %>
-
 </ul>
 
+<br>
 <%= link_to "New Message", new_message_path %>
 <br>
 <%= link_to "New Contact", new_contact_path, id: "new_contact", remote: true %>

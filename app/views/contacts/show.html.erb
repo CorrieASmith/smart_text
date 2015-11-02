@@ -2,7 +2,9 @@
 <h4><%= @contact.number %></h4>
 <br>
 
+<p><%= link_to "Message", new_message_path %></p>
+
 <p><%= link_to "Edit", edit_contact_path(@contact), id: "edit_contact", remote: true %></p>
 <p><%= link_to "Delete", contact_path(@contact),
-:data => {:confirm => "Are you sure you want to delete this target muscle?",
+:data => {:confirm => "Are you sure you want to delete this contact?",
 :method => "delete"} %></p>

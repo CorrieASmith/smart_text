@@ -1,7 +1,14 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+class Contact < ActiveRecord::Base
+
+contacts = Contact.create([{ name: "John Cena", number: 2062406058 }])
+contacts = Contact.create([{ name: "Dr. Phil", number: 2062406058 }])
+contacts = Contact.create([{ name: "Oprah Winfrey", number: 2062406058 }])
+contacts = Contact.create([{ name: "Ned Flanders", number: 2062406058 }])
+contacts = Contact.create([{ name: "Hillary Clinton", number: 2062406058 }])
+contacts = Contact.create([{ name: "Corrie Smith", number: 2062406058 }])
+contacts = Contact.create([{ name: "Bender", number: 206240605 }])
+contacts = Contact.create([{ name: "Fry", number: 2062406058 }])
+contacts = Contact.create([{ name: "Leela", number: 2062406058 }])
+contacts = Contact.create([{ name: "John Cena", number: 2062406058 }])
+
+end
