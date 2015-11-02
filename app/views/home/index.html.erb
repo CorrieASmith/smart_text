@@ -2,8 +2,8 @@
 
 <ul>
 
-  <% @messages.each do |message| %>
-    <li><%= link_to message.id, message_path(message) %></li>
+  <% @contacts.each do |contact| %>
+    <li><%= link_to contact.name, contact_path(contact) %></li>
   <% end %>
 
 </ul>
