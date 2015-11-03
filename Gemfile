@@ -7,6 +7,7 @@ gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'bootstrap-sass', '~> 3.3.5'
+gem 'devise'
 gem 'rest-client'
 
 group :development do
