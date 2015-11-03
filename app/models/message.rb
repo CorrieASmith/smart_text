@@ -1,4 +1,5 @@
 class Message < ActiveRecord::Base
+  has_many :contacts
   before_create :send_sms
 
 private

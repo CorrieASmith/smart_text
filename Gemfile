@@ -8,6 +8,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'rest-client'
+gem 'chosen-rails'
 
 group :development do
   gem 'byebug'

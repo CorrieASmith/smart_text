@@ -11,11 +11,23 @@
 <% end %>
 
 <%= form_for @message do |f| %>
-  <%= f.label :to %>
-  <%= f.text_field :to %>
-  <%= f.label :from %>
-  <%= f.text_field :from %>
-  <%= f.label :body %>
-  <%= f.text_field :body %>
+
+  <div class="field>"
+    <%= f.label :contact_ids, "To" %>
+    <%= f.collection_select :contact_ids, Contact.order(:name), :id, :name, {},
+    {multiple: true} %>
+  </div>
+<br>
+  <div class="field>"
+    <%= f.label :from %>
+    <%= f.text_field :from %>
+  </div>
+<br>
+  <div class="field>"
+    <%= f.label :body %>
+    <%= f.text_field :body %>
+  </div>
+<br>
+<br>
   <%= f.submit %>
 <% end %>
